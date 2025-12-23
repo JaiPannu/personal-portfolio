@@ -3,7 +3,7 @@
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## What I learnt while making this portfolio
+## What I learned while making this portfolio
 
 - CRUD operations for showcasing portfolio projects.
 - 🔒 Environment variable configuration and input sanitization.
