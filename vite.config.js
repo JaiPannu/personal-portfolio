@@ -4,4 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: false,
+    open: false, // Don't auto-open browser (fixes WSL Qt issues)
+    watch: {
+      usePolling: true, // Needed for WSL2
+    }
+  }
 })
