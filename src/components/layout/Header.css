@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 4rem;
+  background: transparent;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
