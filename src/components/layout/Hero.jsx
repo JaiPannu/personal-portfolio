@@ -5,23 +5,23 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="hero-content">
         <h1 className="hero-title">
-          Hi, I'm <span className="highlight">Your Name</span>
+          Hi, I'm <span className="highlight">Jai Pannu</span>
         </h1>
         <p className="hero-subtitle">
-          I build things for the web
+          Thank you for visiting my personal portfolio!
         </p>
         <p className="hero-description">
-          A software engineer specializing in building exceptional digital experiences.
-          Currently focused on building accessible, human-centered products.
+          I am a Mechatronics Engineering student at the University of Waterloo
+          with a passion for robotics, embedded systems, and software development.
         </p>
         <div className="hero-links">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com/JaiPannu?tab=overview&from=2026-01-01&to=2026-01-01" target="_blank" rel="noopener noreferrer" className="social-link">
             GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="www.linkedin.com/in/jai-pannu" target="_blank" rel="noopener noreferrer" className="social-link">
             LinkedIn
           </a>
-          <a href="mailto:your.email@example.com" className="social-link">
+          <a href="mailto:js3pannu@uwaterloo.ca" className="social-link">
             Email
           </a>
         </div>
