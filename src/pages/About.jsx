@@ -7,8 +7,12 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p className="about-text">
-            I'm a software engineer passionate about building beautiful and functional web applications.
-            I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
+            I'm a driven student with a passion for engineering, 
+            technology, and turning ideas into reality. I am always
+            building, learning, and exploring new technologies to 
+            expand my skill set. I have been building, starting
+            with Hackathons and then community projects,
+            to make things people love.
           </p>
           <p className="about-text">
             My interest in web development started back in 2020 when I decided to try building my first website.
