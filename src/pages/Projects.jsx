@@ -9,21 +9,24 @@ const Projects = () => {
       description: "A personal portfolio website built with React and Vite, featuring a clean and minimal design with smooth animations.",
       tags: ["React", "Vite", "CSS"],
       github: "https://github.com/yourusername/portfolio",
-      link: "https://yourportfolio.com"
+      link: "https://yourportfolio.com",
+      image: "https://via.placeholder.com/400x250/646cff/ffffff?text=Portfolio+Website"
     },
     {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce application with user authentication, product management, and payment integration.",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       github: "https://github.com/yourusername/ecommerce",
-      link: null
+      link: null,
+      image: "https://via.placeholder.com/400x250/646cff/ffffff?text=E-Commerce+Platform"
     },
     {
       title: "Task Management App",
       description: "A collaborative task management tool with real-time updates and team collaboration features.",
       tags: ["React", "Firebase", "Material-UI"],
       github: "https://github.com/yourusername/taskapp",
-      link: "https://taskapp.com"
+      link: "https://taskapp.com",
+      image: "https://via.placeholder.com/400x250/646cff/ffffff?text=Task+Management+App"
     },
   ];
 

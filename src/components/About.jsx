@@ -1,4 +1,4 @@
-import './About.css';
+// import './About.css'; // TODO: Move styles to a global CSS file or use CSS Modules
 
 const About = () => {
   return (
@@ -7,10 +7,16 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p className="about-text">
-            I am a Mechatronics Engineering student at the University of Waterloo
-            with a passion for robotics, embedded systems, and software development.
-            I have always been interested in how things work, which led me to
-            develop a passion for design and creation of my own.
+            I'm a driven student with a passion for engineering, 
+            technology, and turning ideas into reality. I am always
+            building, learning, and exploring new technologies to 
+            expand my skill set. I have been building, starting
+            with Hackathons and then community projects,
+            to make things people love.
+          </p>
+          <p className="about-text">
+            My interest in web development started back in 2020 when I decided to try building my first website.
+            Fast-forward to today, and I've had the privilege of working on various projects and learning new technologies.
           </p>
           <p className="about-text">
             Here are a few technologies I've been working with recently:
