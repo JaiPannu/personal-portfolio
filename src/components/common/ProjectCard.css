@@ -1,16 +1,18 @@
 .project-card {
-  background: #f9f9f9;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #1a3456 0%, #0f1f35 100%);
+  border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(91, 156, 255, 0.2);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(91, 156, 255, 0.4);
 }
 
 .project-image {
@@ -45,9 +47,9 @@
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -57,36 +59,39 @@
 }
 
 .project-icon {
-  color: #666;
+  color: #5b9cff;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
+  text-decoration: underline;
 }
 
 .project-icon:hover {
-  color: #646cff;
+  color: #ffffff;
 }
 
 .project-description {
-  color: #666;
-  line-height: 1.7;
+  color: #c0c0c0;
+  line-height: 1.6;
   margin: 0 0 1.5rem 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: auto;
 }
 
 .project-tag {
-  font-size: 0.85rem;
-  color: #646cff;
-  background: rgba(100, 108, 255, 0.1);
+  font-size: 0.8rem;
+  color: #ffffff;
+  background: rgba(91, 156, 255, 0.3);
   padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  font-family: 'Courier New', monospace;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid rgba(91, 156, 255, 0.4);
 }
 
 @media (max-width: 768px) {
