@@ -10,15 +10,12 @@ const About = () => {
           <div className="about-left">
             <div className="profile-image">
               <div className="profile-image-wrapper">
-                <img src="/src/assets/images/My_image.jpeg" alt="Jai Pannu" />
+                <img src="src/assets/images/My-image.png" alt="Jai Pannu" />
               </div>
-              <span className="star-decoration star-1">✦</span>
-              <span className="star-decoration star-2">✦</span>
-              <span className="star-decoration star-3">✦</span>
             </div>
             <h3 className="about-role">Founder and Creator</h3>
             <p className="about-bio">
-              I have been building in and leading STEM intitiatives since 2021, ranging from manufacturing research
+              I have been building in and leading STEM intitiatives since 2022, ranging from manufacturing research
               to accessibility technology leading to on-field impact.
             </p>
             <p className="about-bio">
