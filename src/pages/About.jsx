@@ -9,7 +9,12 @@ const About = () => {
         <div className="about-layout">
           <div className="about-left">
             <div className="profile-image">
-              <img src="https://via.placeholder.com/300x300/5b9cff/ffffff?text=Your+Photo" alt="Jai Pannu" />
+              <div className="profile-image-wrapper">
+                <img src="/src/assets/images/My_image.jpeg" alt="Jai Pannu" />
+              </div>
+              <span className="star-decoration star-1">✦</span>
+              <span className="star-decoration star-2">✦</span>
+              <span className="star-decoration star-3">✦</span>
             </div>
             <h3 className="about-role">Founder and Creator</h3>
             <p className="about-bio">
@@ -21,7 +26,8 @@ const About = () => {
               multidisciplinary approach to problem-solving leading to constant learning of new skills and perspectives.
             </p>
             <p className="about-bio">
-              I love chess! Add me as a friend on chess.com and let's play a game sometime. Fun fact: I played provincial level soccer in high school!
+              I enjoy working out in my free time and training for calisthenics. Fun fact: I played provincial level soccer
+               in high school!
             </p>
             <div className="about-buttons">
               <button className="btn-primary">Let's Talk</button>

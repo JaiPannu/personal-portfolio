@@ -1,0 +1,14 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main > section {
+  position: relative;
+  z-index: 1;
+}

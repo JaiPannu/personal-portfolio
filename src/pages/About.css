@@ -36,18 +36,90 @@
 }
 
 .profile-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 320px;
+  height: 380px;
+  border-radius: 24px;
+  overflow: visible;
   margin-bottom: 2rem;
-  border: 4px solid #5b9cff;
+  position: relative;
+  padding: 1rem;
+}
+
+.profile-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(91, 156, 255, 0.3), rgba(91, 156, 255, 0.1));
+  border-radius: 24px;
+  z-index: -1;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
 .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+}
+
+/* Decorative stars */
+.profile-image::after {
+  content: '✦';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.star-decoration {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.star-1 {
+  top: -10px;
+  right: 20px;
+  animation-delay: 0.5s;
+}
+
+.star-2 {
+  bottom: -10px;
+  right: -10px;
+  font-size: 2rem;
+  animation-delay: 1s;
+}
+
+.star-3 {
+  bottom: 30px;
+  right: -15px;
+  font-size: 1.2rem;
+  animation-delay: 1.5s;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
 }
 
 .about-role {
@@ -209,8 +281,8 @@
   }
 
   .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 320px;
   }
 
   .about-role {
