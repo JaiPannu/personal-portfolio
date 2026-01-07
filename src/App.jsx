@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <Starfield />
       <Header />
+      <Starfield />
       <main>
         <Hero />
         <About />
