@@ -13,16 +13,15 @@ const About = () => {
             </div>
             <h3 className="about-role">Founder and Creator</h3>
             <p className="about-bio">
-              Since 2021, I've spearheaded and contributed to cutting-edge projects—from autonomous robotics and
-              accessibility tech to youth STEM initiatives, leading major developments in design, prototyping, and impact.
+              I have been building in and leading STEM intitiatives since 2021, ranging from manufacturing research
+              to accessibility technology leading to on-field impact.
             </p>
             <p className="about-bio">
-              My goal is to unite creativity and purpose to develop meaningful solutions to pressing issues. I am constantly
-              learning new frameworks, methods of manufacturing, and challenging the scope of my initiatives.
+              My aim is turning tangible ideas to reality through engineering and using first principles thinking. I employ a
+              multidisciplinary approach to problem-solving leading to constant learning of new skills and perspectives.
             </p>
             <p className="about-bio">
-              I also enjoy photography as a hobby! Feel free to check out my <a href="#" className="link-inline">Unsplash</a>.
-              You might catch me out on a run too - I used to compete at a national level in track and field.
+              I love chess! Add me as a friend on chess.com and let's play a game sometime. Fun fact: I played provincial level soccer in high school!
             </p>
             <div className="about-buttons">
               <button className="btn-primary">Let's Talk</button>
