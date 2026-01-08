@@ -1,0 +1,121 @@
+/* Global Liquid Glass Effect Classes */
+
+/* Base liquid glass container */
+.liquid-glass {
+  --glass-bg-color: rgba(255, 255, 255, 0.25);
+  --glass-highlight: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.18);
+
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .liquid-glass {
+    --glass-bg-color: rgba(0, 0, 0, 0.25);
+    --glass-highlight: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Glass filter layer - creates the blur and distortion */
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  filter: saturate(120%) brightness(1.15);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Glass overlay layer - provides the frosted background */
+.liquid-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: var(--glass-bg-color);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Content wrapper - ensures content appears above glass layers */
+.liquid-glass > * {
+  position: relative;
+  z-index: 4;
+}
+
+/* Specular highlight layer (optional - add as child element) */
+.liquid-glass-specular {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  box-shadow: inset 1px 1px 1px var(--glass-highlight);
+  border-radius: inherit;
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+/* Variant: Stronger glass effect */
+.liquid-glass-strong {
+  --glass-bg-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(16px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .liquid-glass-strong {
+    --glass-bg-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Variant: Subtle glass effect */
+.liquid-glass-subtle {
+  --glass-bg-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .liquid-glass-subtle {
+    --glass-bg-color: rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Border radius variants */
+.liquid-glass-rounded-sm {
+  border-radius: 8px;
+}
+
+.liquid-glass-rounded-md {
+  border-radius: 12px;
+}
+
+.liquid-glass-rounded-lg {
+  border-radius: 16px;
+}
+
+.liquid-glass-rounded-xl {
+  border-radius: 24px;
+}
+
+/* Interactive hover effect */
+.liquid-glass-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.liquid-glass-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* SVG Filter for advanced distortion effect */
+.liquid-glass-svg-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

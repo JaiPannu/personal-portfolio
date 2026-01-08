@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+vite.config.js
+vite.config.ts
+
 logs
 *.log
 npm-debug.log*
