@@ -28,7 +28,7 @@ const About = () => {
             </p>
             <div className="about-buttons">
               <button className="btn-primary">Let's Talk</button>
-              <button className="btn-secondary">Download my Resume</button>
+              <a href="https://drive.google.com/drive/folders/1wc7mwEKchrYSepHtoDnb49AXKtsa_KbP?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-secondary">Download my Resume</a>
             </div>
           </div>
 
