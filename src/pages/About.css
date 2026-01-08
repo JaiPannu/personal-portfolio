@@ -21,7 +21,7 @@
 }
 
 .section-title .highlight {
-  color: #5b9cff;
+  color: #98c379;
 }
 
 .about-layout {
@@ -97,13 +97,13 @@
 }
 
 .link-inline {
-  color: #5b9cff;
+  color: #98c379;
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 
 .link-inline:hover {
-  color: #4a8ae8;
+  color: #8ab068;
 }
 
 .about-buttons {
@@ -130,24 +130,24 @@
 }
 
 .btn-primary {
-  background: #5b9cff;
-  color: #ffffff;
+  background: #98c379;
+  color: #0a192f;
 }
 
 .btn-primary:hover {
-  background: #4a8ae8;
+  background: #8ab068;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(91, 156, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(152, 195, 121, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #5b9cff;
-  border: 2px solid #5b9cff;
+  color: #98c379;
+  border: 2px solid #98c379;
 }
 
 .btn-secondary:hover {
-  background: rgba(91, 156, 255, 0.1);
+  background: rgba(152, 195, 121, 0.1);
   transform: translateY(-2px);
 }
 
@@ -158,13 +158,13 @@
 }
 
 .info-card {
-  background: linear-gradient(135deg, #2a4a7c 0%, #1a3456 100%);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
   padding: 2rem;
   display: flex;
   gap: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(91, 156, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .info-card:hover {
@@ -176,12 +176,12 @@
   flex-shrink: 0;
   width: 60px;
   height: 60px;
-  background: rgba(91, 156, 255, 0.2);
+  background: rgba(152, 195, 121, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5b9cff;
+  color: #98c379;
 }
 
 .card-icon svg {
@@ -192,7 +192,7 @@
 .card-content h4 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #5b9cff;
+  color: #98c379;
   margin: 0 0 0.8rem 0;
 }
 
@@ -213,7 +213,7 @@
 }
 
 .card-link:hover {
-  color: #5b9cff;
+  color: #98c379;
 }
 
 @media (max-width: 1024px) {

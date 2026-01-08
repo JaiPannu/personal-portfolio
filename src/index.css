@@ -39,8 +39,8 @@ html {
 }
 
 ::selection {
-  background-color: rgba(100, 108, 255, 0.2);
-  color: #ffffff;
+  background-color: rgba(152, 195, 121, 0.2);
+  color: #98c379;
 }
 
 .app-container {

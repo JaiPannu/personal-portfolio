@@ -24,7 +24,7 @@
 .hero-name {
   font-size: 4.5rem;
   font-weight: 700;
-  color: #5b9cff;
+  color: #98c379;
   margin: 0 0 2rem 0;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -46,8 +46,8 @@
 }
 
 .cta-button {
-  background: #5b9cff;
-  color: #ffffff;
+  background: #98c379;
+  color: #0a192f;
   border: none;
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
@@ -60,9 +60,9 @@
 }
 
 .cta-button:hover {
-  background: #4a8ae8;
+  background: #8ab068;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(91, 156, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(152, 195, 121, 0.3);
 }
 
 .social-icons {
@@ -87,8 +87,8 @@
 }
 
 .social-icon:hover {
-  background: rgba(91, 156, 255, 0.2);
-  border-color: #5b9cff;
+  background: rgba(152, 195, 121, 0.1);
+  border-color: #98c379;
   transform: translateY(-3px);
 }
 
@@ -112,7 +112,7 @@
 }
 
 .scroll-indicator svg {
-  color: #5b9cff;
+  color: #98c379;
 }
 
 @keyframes bounce {

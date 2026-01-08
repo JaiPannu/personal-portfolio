@@ -1,18 +1,18 @@
 .project-card {
-  background: linear-gradient(135deg, #1a3456 0%, #0f1f35 100%);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(91, 156, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  border-color: rgba(91, 156, 255, 0.4);
+  border-color: rgba(152, 195, 121, 0.4);
 }
 
 .project-image {
@@ -59,7 +59,7 @@
 }
 
 .project-icon {
-  color: #5b9cff;
+  color: #98c379;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
@@ -86,12 +86,12 @@
 
 .project-tag {
   font-size: 0.8rem;
-  color: #ffffff;
-  background: rgba(91, 156, 255, 0.3);
+  color: #98c379;
+  background: rgba(152, 195, 121, 0.1);
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-weight: 500;
-  border: 1px solid rgba(91, 156, 255, 0.4);
+  border: 1px solid rgba(152, 195, 121, 0.2);
 }
 
 @media (max-width: 768px) {

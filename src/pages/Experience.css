@@ -1,0 +1,197 @@
+.experience-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Timeline Track */
+.timeline-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(150px + 2rem + 20px);
+  width: 2px;
+  height: 100%;
+  z-index: 0;
+}
+
+.timeline-line-background {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #98c379;
+  box-shadow: 0 0 10px rgba(152, 195, 121, 0.5);
+  /* Fade out the bottom tip */
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+.experience-row {
+  display: grid;
+  grid-template-columns: 150px 40px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.experience-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-date-col {
+  padding-top: 1.5rem;
+  text-align: right;
+}
+
+.timeline-node-col {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.8rem;
+  height: 100%;
+}
+
+.date-text {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0a192f; /* Dark background */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.timeline-dot.active {
+  background: #98c379;
+  border-color: #98c379;
+  box-shadow: 0 0 10px rgba(152, 195, 121, 0.5);
+}
+
+.experience-card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e6f1ff;
+  margin-bottom: 0.25rem;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  color: #98c379; /* Highlight color */
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.experience-description ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-description li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #8892b0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.experience-description li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #98c379;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.experience-skill-tag {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: #98c379;
+  background: rgba(152, 195, 121, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .timeline-track {
+    display: none; /* Hide complex timeline on mobile */
+  }
+
+  .experience-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    opacity: 1; /* Disable scroll reveal on mobile if preferred, or keep it */
+    transform: none;
+  }
+
+  .experience-date-col {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-node-col {
+    display: none;
+  }
+}

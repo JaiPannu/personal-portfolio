@@ -5,29 +5,77 @@ const Projects = () => {
   // Sample project data - you can edit this
   const projects = [
     {
-      title: "Autobat",
-      description: "A microcontroller-powered T-ball batting system designed for use with children at KidsAbility with motor impairments, enabling accessible and independent play through the push of a button.",
+      title: "Bucky",
+      description: "A 5 DOF robotic arm with fin ray gripper, designed for pick-and-place tasks. Features inverse kinematics and operated via ESP32 microcontroller with WiFi control.",
       tags: ["Arduino", "C / C++", "SOLIDWORKS", "Dot Solder Board"],
       github: "https://github.com/yourusername/autobat",
       link: null,
       image: "https://via.placeholder.com/400x250/2a4a7c/ffffff?text=Autobat"
     },
     {
-      title: "StrobeShield",
-      description: "An award-winning hackathon project that uses IoT and light-triggered photoresistors to polarize their lenses to prevent photo epilepsy seizures, with real-time event logging.",
-      tags: ["Raspberry Pi", "MicroPython", "SOLIDWORKS"],
-      github: "https://github.com/yourusername/strobeshield",
+      title: "CoCare AI",
+      description: "A privacy-first AI copilot for caregivers of neurodivergent children. Uses MediaPipe for body landmark detection and Gemini API to generate behavioral summaries without storing raw footage.",
+      tags: ["React", "TypeScript", "Python", "OpenCV", "Gemini API", "MediaPipe"],
+      github: null,
       link: null,
-      image: "https://via.placeholder.com/400x250/2a4a7c/ffffff?text=StrobeShield"
+      image: "path/to/cocare-image.jpg"
     },
     {
-      title: "Shape Detector Convolutional Neural Network",
-      description: "A personal project using deep learning with PyTorch + OpenCV to detect circles, squares, and triangles, featuring a GUI to choose training parameters.",
-      tags: ["Python", "PyTorch", "OpenCV", "Tkinter", "Machine Learning"],
-      github: "https://github.com/yourusername/shape-detector",
+      title: "Speech Dojo LMS",
+      description: "A scalable Learning Management System serving 2500+ users. Engineered a full LAMP stack environment with automated GitHub Actions CI/CD pipelines for zero-downtime deployment.",
+      tags: ["PHP", "JavaScript", "Linux", "Apache", "MySQL", "Docker"],
+      github: null,
       link: null,
-      image: "https://via.placeholder.com/400x250/2a4a7c/ffffff?text=Shape+Detector"
+      image: "path/to/speech-dojo-image.jpg"
     },
+      {
+      title: "Captur - AI-Optimized DAC Bioreactor",
+      description: "An award-winning reinforcement learning system that correlates environmental metrics with algae growth. Uses Random Forest Regressors to optimize CO2 capture efficiency.",
+      tags: ["Python", "Scikit-learn", "Arduino", "Machine Learning"],
+      github: null,
+      link: null,
+      image: "path/to/bioreactor-image.jpg"
+    },
+    {
+      title: "Divergence",
+      description: "Winner of the NeurotechX Global Hackathon. A BCI web app that analyzes EEG brainwave data using FFT and NLP transformers to diagnose learning styles and adapt educational content.",
+      tags: ["Python", "C++", "TensorFlow", "Hugging Face", "Streamlit", "EEG"],
+      github: null,
+      link: null,
+      image: "path/to/divergence-image.jpg"
+    },
+    {
+      title: "AWISSA",
+      description: "NASA SpaceApps Top 500 Finalist. An interactive geospatial dashboard utilizing satellite imagery and remote sensing pipelines to visualize fire-prone areas and dynamic risk zones.",
+      tags: ["React", "Node.js", "Express", "Leaflet.js", "NASA API"],
+      github: null,
+      link: null,
+      image: "path/to/awissa-image.jpg"
+    },
+    {
+      title: "Kobe",
+      description: "An autonomous VEX-based robot capable of launching projectiles at fixed targets. Features a closed-loop PID controller for precise distance maintenance and encoder feedback.",
+      tags: ["C++", "VEX Robotics", "PID Control", "Blender"],
+      github: null,
+      link: null,
+      image: "path/to/kobe-image.jpg"
+    },
+    {
+      title: "AlbertaSat Ex-Alta 3 Hyperion Solar Wings",
+      description: "Developed firmware for the power subsystem of a CubeSat. Integrated solar array configurations, thermal tracking sensors, and fail-safe deployment mechanisms using I2C protocols.",
+      tags: ["C / C++", "Embedded Systems", "I2C", "PCB Design"],
+      github: null,
+      link: null,
+      image: "path/to/albertasat-image.jpg"
+    },
+    {
+      title: "BIFI (Business  Intelligence Financial Information) Club Website",
+      description: "A responsive website for a financial club that showcases events, member profiles, and educational resources.",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      github: null,
+      link: "https://delightful-pothos-e02432.netlify.app/",
+      image: "path/to/bifi-image.jpg"
+    }
   ];
 
   return (

@@ -1,4 +1,6 @@
 import './ProjectCard.css';
+import '../global.css';
+import useLiquidGlassHover from '../../hooks/useLiquidGlassHover';
 
 /**
  * Project Card Component
@@ -10,8 +12,11 @@ import './ProjectCard.css';
  * @param {string} image - Project image URL
  */
 const ProjectCard = ({ title, description, tags = [], link, github, image }) => {
+  const cardRef = useLiquidGlassHover();
+
   return (
-    <div className="project-card">
+    <div ref={cardRef} className="project-card liquid-glass liquid-glass-rounded-lg">
+      <div className="liquid-glass-specular"></div>
       {image && (
         <div className="project-image">
           <img src={image} alt={title} />
