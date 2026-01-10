@@ -15,6 +15,7 @@ const Starfield = () => {
     const numStars = 300;
     let mouseX = 0;
     let mouseY = 0;
+    let wishText = null;
 
     // Set canvas size
     const resizeCanvas = () => {
@@ -55,6 +56,7 @@ const Starfield = () => {
           angle: Math.random() * Math.PI / 6 + Math.PI / 6,
           opacity: 1
         });
+        wishText = { opacity: 1.5 }; // Trigger "Make a wish!" text
       }
     };
 
@@ -173,6 +175,17 @@ const Starfield = () => {
         }
         return false;
       });
+
+      // Draw and update "Make a wish!" text
+      if (wishText && wishText.opacity > 0) {
+        ctx.font = "italic 18px 'Times New Roman', serif";
+        ctx.fillStyle = `rgba(255, 255, 224, ${Math.min(1, wishText.opacity)})`;
+        ctx.textAlign = 'right';
+        ctx.fillText("Make a wish!", canvas.width - 30, 40);
+        wishText.opacity -= 0.01; // Fade out
+      } else {
+        wishText = null;
+      }
 
       createShootingStar();
       animationFrameId = requestAnimationFrame(animate);

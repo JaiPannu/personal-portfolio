@@ -1,6 +1,7 @@
 import './About.css';
 import '../components/global.css';
 import useLiquidGlassHover from '../hooks/useLiquidGlassHover';
+import myImage from '../assets/images/My-image.png';
 const About = () => {
   const bioCardRef = useLiquidGlassHover();
 
@@ -13,7 +14,7 @@ const About = () => {
           <div className="about-left">
             <div className="profile-image">
               <div className="profile-image-wrapper">
-                <img src="src/assets/images/My-image.png" alt="Jai Pannu" />
+                <img src={myImage} alt="Jai Pannu" />
               </div>
           </div>
           </div>
@@ -37,6 +38,12 @@ const About = () => {
               <div className="about-buttons">
                 <button className="btn-primary">Let's Talk</button>
                 <a href="https://drive.google.com/drive/folders/1wc7mwEKchrYSepHtoDnb49AXKtsa_KbP?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-secondary">Download my Resume</a>
+                <a href="#projects" className="btn-secondary">
+                  My Work
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

@@ -1,20 +1,24 @@
-# BACKEND
-backend/
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+*.local
+
+# Environment variables
 .env
-.env.example
+.env.local
+.env.*.local
+
+# Backend (not needed for frontend deployment)
+backend/
 docker-compose.yml
 Dockerfile
 .dockerignore
 DOCKER_GUIDE.md
 
-node_modules
-dist
-dist-ssr
-*.local
-
-vite.config.js
-vite.config.ts
-
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -23,6 +27,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -32,3 +37,12 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Vercel
+.vercel
+
+# Temporary and unnecessary files
+*.tmp
+*.temp
+.cache
+.parcel-cache

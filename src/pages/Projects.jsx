@@ -1,5 +1,14 @@
 import './Projects.css';
 import '../components/common/ProjectCard.css';
+import buckyImg from '../assets/images/Bucky.png';
+import coCareImg from '../assets/images/CoCare.png';
+import speechdojoImg from '../assets/images/Speechdojo.jpg';
+import capturImg from '../assets/images/Captur.jpg';
+import divergenceImg from '../assets/images/Divergence.webp';
+import awissaImg from '../assets/images/AWISSA.png';
+import kobeImg from '../assets/images/Kobe.png';
+import albertaSatImg from '../assets/images/AlbertaSat.png';
+import bifiImg from '../assets/images/BIFI.png';
 
 const ProjectCard = ({ title, description, tags, github, link, image }) => {
   return (
@@ -50,7 +59,7 @@ const Projects = () => {
       tags: ["Arduino", "C / C++", "SOLIDWORKS", "Dot Solder Board"],
       github: "https://github.com/JaiPannu/Bucky.git",
       link: null,
-      image: "src/assets/images/Bucky.png"
+      image: buckyImg
     },
     {
       title: "CoCare AI",
@@ -58,7 +67,7 @@ const Projects = () => {
       tags: ["React", "TypeScript", "Python", "OpenCV", "Gemini API", "MediaPipe"],
       github: "https://github.com/JaiPannu/CoCare.git",
       link: "https://www.youtube.com/watch?v=8Bfpsvvbp7Y",
-      image: "src/assets/images/CoCare.png"
+      image: coCareImg
     },
     {
       title: "LMS Server Migration",
@@ -66,7 +75,7 @@ const Projects = () => {
       tags: ["PHP", "CI/CD", "Linux", "DigitalOcean", "Apache", "MySQL", "Docker"],
       github: "https://github.com/speechdojo",
       link: "https://www.speechdojo.org/",
-      image: "src/assets/images/Speechdojo.jpg"
+      image: speechdojoImg
     },
       {
       title: "Captur - AI-Optimized DAC Bioreactor",
@@ -74,7 +83,7 @@ const Projects = () => {
       tags: ["Python", "Scikit-learn", "Arduino", "Machine Learning"],
       github: null,
       link: "https://www.canva.com/design/DAGhG9VoQdg/4g9gnUoy0A2itG3O6U2pCw/edit",
-      image: "src/assets/images/Captur.jpg"
+      image: capturImg
     },
     {
       title: "Divergence - NeurotechX Global Hackathon Winner",
@@ -82,15 +91,15 @@ const Projects = () => {
       tags: ["Python", "C++", "TensorFlow", "Hugging Face", "Streamlit", "EEG"],
       github: "https://www.figma.com/proto/fykTZUAuXRk7R4I1JE94bI/Divergence-by-NeuroMonkeys?type=design&node-id=20-8&t=IM9HS8YkSY1rGkiQ-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=16%3A42",
       link: "https://awissa.notion.site/Divergence-Using-Ensemble-Learning-and-EEG-Tracking-to-Identify-Learning-Neuro-Divergencies-770ae2d377a94ef1818562f99a52676b",
-      image: "src/assets/images/Divergence.webp"
+      image: divergenceImg
     },
     {
-      title: "AWISSA - Top 0.8% Globally",
+      title: "AWISSA - Top 0.8% Globally NASA SpaceApps",
       description: "NASA SpaceApps Top 500 Finalist among 57,000+ participants. An interactive geospatial dashboard utilizing satellite imagery and remote sensing pipelines to visualize fire-prone areas and dynamic risk zones.",
       tags: ["React", "Node.js", "Express", "Leaflet.js", "NASA API"],
       github: "https://github.com/lucasxu727/AWISSA.git",
       link: "https://awissa.notion.site/AWISSA-Addressing-Wildfire-Issues-in-the-Democratic-Republic-of-Congo-fa63271a8a754d35ad680ebaa2d27f3e",
-      image: "src/assets/images/AWISSA.png"
+      image: awissaImg
     },
     {
       title: "Kobe",
@@ -98,7 +107,7 @@ const Projects = () => {
       tags: ["C++", "VEX Robotics", "PID Control", "Blender"],
       github: null,
       link: "https://drive.google.com/file/d/1j1a1bmIftkF-fkqGZZYZ3Wk0a-CInX16/view?usp=drive_link",
-      image: "src/assets/images/Kobe.png"
+      image: kobeImg
     },
     {
       title: "AlbertaSat Ex-Alta 3 Hyperion Solar Wings",
@@ -106,7 +115,7 @@ const Projects = () => {
       tags: ["C / C++", "Embedded Systems", "I2C", "PCB Design"],
       github: null,
       link: null,
-      image: "src/assets/images/AlbertaSat.png"
+      image: albertaSatImg
     },
     {
       title: "BIFI (Business  Intelligence Financial Information) Club Website",
@@ -114,7 +123,7 @@ const Projects = () => {
       tags: ["HTML", "SCSS", "JavaScript", "Firebase Hosting", "Netlify"],
       github: "https://github.com/JaiPannu/BIFI-Final.git",
       link: "https://delightful-pothos-e02432.netlify.app/",
-      image: "src/assets/images/BIFI.png"
+      image: bifiImg
     }
   ];
 
