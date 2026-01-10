@@ -34,6 +34,16 @@
   gap: 2rem;
 }
 
+.projects-grid .project-card .project-image {
+  height: 300px;
+}
+
+.projects-grid .project-card .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
