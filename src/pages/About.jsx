@@ -37,7 +37,7 @@ const About = () => {
               </p>
               <div className="about-buttons">
                 <button className="btn-primary">Let's Talk</button>
-                <a href="https://drive.google.com/drive/folders/1wc7mwEKchrYSepHtoDnb49AXKtsa_KbP?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-secondary">Download my Resume</a>
+                <a href="https://drive.google.com/file/d/1zpSg9ygdsdcZcUHEZ7FiEUxbSWNy_9HA/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-secondary">Download my Resume</a>
                 <a href="#projects" className="btn-secondary">
                   My Work
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
