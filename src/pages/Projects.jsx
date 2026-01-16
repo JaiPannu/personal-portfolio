@@ -55,7 +55,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Bucky",
-      description: "A 5 DOF robotic arm with fin ray gripper, designed for pick-and-place tasks. Features inverse kinematics and operated via ESP32 microcontroller with WiFi control.",
+      description: "An open source adaptable inverse kinematics package currently configured for Bucky - a 6 DOF VLA robotic arm with fin ray gripper, designed for pick-and-place tasks. Operated via ESP32 microcontroller with WiFi control. Controlled by NLP and spatial recognition.",
       tags: ["Arduino", "C / C++", "SOLIDWORKS", "Dot Solder Board"],
       github: "https://github.com/JaiPannu/Bucky.git",
       link: null,

@@ -36,7 +36,7 @@ const About = () => {
                  in high school!
               </p>
               <div className="about-buttons">
-                <button className="btn-primary">Let's Talk</button>
+                <a href="#contact" className="btn-primary">Let's Talk</a>
                 <a href="https://drive.google.com/file/d/1zpSg9ygdsdcZcUHEZ7FiEUxbSWNy_9HA/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-secondary">Download my Resume</a>
                 <a href="#projects" className="btn-secondary">
                   My Work
