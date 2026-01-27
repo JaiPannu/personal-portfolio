@@ -1,7 +1,7 @@
 import './About.css';
 import '../components/global.css';
 import useLiquidGlassHover from '../hooks/useLiquidGlassHover';
-import myImage from '../assets/images/My-image.png';
+import myImage from '../assets/images/My-image-new.jpg';
 const About = () => {
   const bioCardRef = useLiquidGlassHover();
 
