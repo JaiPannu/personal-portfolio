@@ -1,0 +1,42 @@
+.nav-rail {
+  position: fixed;
+  top: 50%;
+  right: 2.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  transform: translateY(-50%);
+}
+
+.nav-rail-link {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 0.24rem;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.nav-rail-link::before {
+  content: none;
+}
+
+.nav-rail-link:hover {
+  color: var(--heading);
+  text-decoration-color: var(--heading);
+}
+
+@media (max-width: 900px) {
+  .nav-rail {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.25rem 1rem 0;
+    transform: none;
+  }
+
+}

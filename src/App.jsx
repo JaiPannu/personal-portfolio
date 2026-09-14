@@ -1,27 +1,40 @@
-import Header from './components/layout/Header';
-import Hero from './components/layout/Hero';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
-import Contact from './pages/Contact';
-import Starfield from './components/common/Starfield';
+import { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavRail from './components/layout/Sidebar';
+import ThemeToggle from './components/common/ThemeToggle';
+import Home from './pages/Home';
+import Writing from './pages/Writing';
+import BlogPost from './pages/BlogPost';
 import './App.css';
-import Experience from './pages/Experience';
 
 function App() {
+  const [theme, setTheme] = useState(
+    () => document.documentElement.dataset.theme || 'solarized',
+  );
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((current) => current === 'solarized' ? 'paper' : 'solarized');
+  };
+
   return (
-    <div className="app">
-      <Header />
-      <Starfield />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
-      </main>
-    </div>
+    <BrowserRouter>
+      <div className="layout">
+        <ThemeToggle theme={theme} onToggle={toggleTheme} />
+        <NavRail />
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/writing" element={<Writing />} />
+            <Route path="/writing/:slug" element={<BlogPost />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 

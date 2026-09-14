@@ -1,0 +1,131 @@
+.writing-preview-copy {
+  max-width: 54ch;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.view-writing {
+  display: inline-flex;
+  margin-top: 1.4rem;
+  color: var(--heading);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 0.3rem;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.view-writing:hover {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent-strong);
+}
+
+.writing-page {
+  width: min(100%, 672px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 2.6rem 0 5rem;
+}
+
+.writing-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.55rem;
+  margin-bottom: 4.5rem;
+  font-size: 0.82rem;
+}
+
+.writing-nav a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 0.28rem;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.writing-nav a:hover {
+  color: var(--heading);
+  text-decoration-color: var(--heading);
+}
+
+.writing-intro h1 {
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.65rem, 4vw, 2rem);
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.writing-intro > div {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 64ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.writing-index {
+  padding-top: 3rem;
+}
+
+.writing-index h2 {
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.writing-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.writing-item {
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.writing-item-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.writing-title {
+  color: var(--heading);
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 0.2rem;
+  transition: text-decoration-color 160ms ease;
+}
+
+.writing-title:hover {
+  text-decoration-color: var(--heading);
+}
+
+.writing-date {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.writing-item > p {
+  color: var(--muted);
+}
+
+.writing-empty {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .writing-page {
+    padding-top: 1.5rem;
+  }
+
+  .writing-nav {
+    margin-bottom: 3.5rem;
+  }
+}

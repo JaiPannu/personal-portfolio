@@ -1,14 +1,59 @@
-.app {
+.layout {
   position: relative;
-  min-height: 100vh;
 }
 
-main {
-  position: relative;
-  z-index: 1;
+.theme-toggle {
+  position: fixed;
+  top: 1.2rem;
+  right: 2.5rem;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  padding: 0 0 0.12rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 0.25rem;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
 }
 
-main > section {
-  position: relative;
-  z-index: 1;
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--heading);
+  text-decoration-color: var(--heading);
+}
+
+.theme-toggle__marker {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  text-decoration: none;
+}
+
+.main {
+  width: min(100% - 3rem, 1040px);
+  margin: 0 auto;
+  padding: 4.5rem 0 6rem;
+}
+
+.main > * + * {
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .theme-toggle {
+    top: 4.25rem;
+    right: 1rem;
+  }
+
+  .main {
+    width: min(100% - 2rem, 760px);
+    padding-top: 3rem;
+  }
 }
