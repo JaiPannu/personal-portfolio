@@ -2,7 +2,7 @@
 // they do not document the contract project's implementation.
 const roverPost = {
   slug: 'my-first-robotics-project',
-  title: 'Rover - My FIrst Engineering Commission',
+  title: 'Rover - My First Engineering Commission',
   hero: 'rover',
   date: 'August 2026',
   dateTime: '2026-08',
