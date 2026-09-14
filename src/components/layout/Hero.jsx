@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import WireframeAsset from '../visual/WireframeAsset';
 import loadCadAscii from '../../data/loadCadAscii';
 import './Hero.css';
@@ -18,7 +19,9 @@ const Pill = ({ href, color = 'blue', children }) => {
 
 const CadLink = ({ className, type, href, label }) => {
   const [ascii, setAscii] = useState('');
-  const external = !href.startsWith('#');
+  const internal = href.startsWith('/');
+  const external = /^https?:\/\//.test(href);
+  const LinkElement = internal ? Link : 'a';
 
   const prepareAscii = () => {
     if (ascii) return;
@@ -26,19 +29,19 @@ const CadLink = ({ className, type, href, label }) => {
   };
 
   return (
-    <a
+    <LinkElement
       className={`cad-floater ${className}`}
-      href={href}
+      {...(internal ? { to: href } : { href })}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      aria-label={`View ${label} project`}
+      aria-label={internal ? `Read ${label} post` : `View ${label} project`}
       onPointerEnter={prepareAscii}
       onFocus={prepareAscii}
       onTouchStart={prepareAscii}
     >
       <WireframeAsset type={type} ascii={ascii} />
-      <span className="cad-link-label">{label} ↗</span>
-    </a>
+      <span className="cad-link-label">{label} {internal ? '→' : '↗'}</span>
+    </LinkElement>
   );
 };
 
@@ -99,7 +102,7 @@ const Intro = () => {
           className="cad-floater--plant"
           type="ugv"
           label="Autonomous UGV"
-          href="#projects"
+          href="/writing/my-first-robotics-project"
         />
         <CadLink
           className="cad-floater--brain"

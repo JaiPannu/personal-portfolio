@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Projects.css';
 import roverImage from '../assets/images/optimized/UGV-Rover.webp';
 import voyagerImage from '../assets/images/optimized/Voyager-Controls.webp';
@@ -13,6 +14,7 @@ const projects = [
     description: 'A compact unmanned ground vehicle designed for autonomous navigation across uneven terrain, combining a custom chassis with onboard sensing and control.',
     tags: ['ROS2', 'C++', 'Autonomous Systems', 'CAD'],
     image: roverImage,
+    to: '/writing/my-first-robotics-project',
   },
   {
     title: 'Voyager Controls',
@@ -58,7 +60,7 @@ const ProjectContents = ({ project }) => (
   <>
     <div className="project-thumb">
       <img src={project.image} alt={`${project.title} project`} loading="lazy" />
-      {project.href && <span className="project-open" aria-hidden="true">↗</span>}
+      {(project.href || project.to) && <span className="project-open" aria-hidden="true">{project.to ? '→' : '↗'}</span>}
     </div>
     <div className="project-meta">
       <span className="project-name">{project.title}</span>
@@ -68,6 +70,7 @@ const ProjectContents = ({ project }) => (
     <div className="project-tags" aria-label="Project technologies">
       {project.tags.map((tag) => <span key={tag} className="project-tag">{tag}</span>)}
     </div>
+    {project.to && <span className="project-read">Read the rover post →</span>}
   </>
 );
 
@@ -80,7 +83,11 @@ const Projects = () => {
       </header>
 
       <div className="projects-grid">
-        {projects.map((project) => project.href ? (
+        {projects.map((project) => project.to ? (
+          <Link key={project.title} className="project-card" to={project.to}>
+            <ProjectContents project={project} />
+          </Link>
+        ) : project.href ? (
           <a
             key={project.title}
             className="project-card"

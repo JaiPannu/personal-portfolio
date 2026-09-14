@@ -61,6 +61,16 @@
   transform: translate(0, 0);
 }
 
+.project-read {
+  display: inline-block;
+  margin-top: 0.85rem;
+  color: var(--heading);
+  font-size: 0.76rem;
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 0.2rem;
+}
+
 .project-meta {
   display: flex;
   align-items: baseline;
